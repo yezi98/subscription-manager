@@ -15,9 +15,9 @@ binding = "SUBSCRIPTIONS_KV"
 preview_id = "your-preview-kv-namespace-id"
 id = "ebf82dab55d44627b02b1defa1b4f1ca"
 
-# 定时任务配置 - 每天早上8点检查
+# 定时任务配置 - 每隔2个小时检查
 [triggers]
-crons = ["0 8 * * *"]
+crons = ["0 */2 * * *"]
 
 # 环境变量（可选，也可以在 Cloudflare Dashboard 中设置）
 [vars]
